@@ -27,7 +27,7 @@ const LoginForm = (props) => {
 	} = useInput(
 		(value) =>
 			value.trim() !== "" &&
-			value.includes("@") && // for instance - in case of e-mail we required the "@"" "." and tle length hihger than  4 signs
+			value.includes("@") && // for instance - in case of e-mail we required the "@" "." and the length hihger than  4 signs
 			value.includes(".") &&
 			value.length > 4
 	);

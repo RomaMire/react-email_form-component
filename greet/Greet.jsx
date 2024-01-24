@@ -9,23 +9,7 @@ const Greet = ({ intro, first, second, third, speed, delay, infinite }) => {
 	const texts = useMemo(() => {
 		return [first, second, third];
 	}, [first, second, third]);
-	/*
-	useEffect(() => {
-		let timeout;
 
-		if (currIdx < text.length + 1) {
-			const timeout = setTimeout(() => {
-				setCurrText((prevText) => prevText + text[currIdx]);
-				setCurrIdx((prevIdx) => prevIdx + 1);
-			}, delay);
-		} else if (infinite) {
-			setCurrIdx(0);
-			setCurrText("");
-		}
-
-		return () => clearTimeout(timeout);
-	}, [currIdx, delay, infinite, text]);
-	*/
 	const textsLength = texts.length;
 
 	useEffect(() => {
